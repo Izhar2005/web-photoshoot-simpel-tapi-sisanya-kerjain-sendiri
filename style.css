@@ -1,0 +1,87 @@
+/* --- Global Styles & Resets --- */
+/* Ini adalah aturan dasar untuk seluruh halaman */
+
+* {
+    box-sizing: border-box; /* Membuat kalkulasi ukuran lebih mudah */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif; /* Menggunakan font pilihan kita */
+    background-color: #FDF6F8; /* Warna background dari palet Cotton Candy Sky */
+    color: #676788; /* Warna teks utama */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* --- Layout Utama --- */
+/* Mengatur tata letak komponen besar */
+
+header {
+    background-color: #F5C8DD; /* Warna pink utama untuk header */
+    padding: 1rem 2rem;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Efek bayangan lembut */
+}
+
+.main-container {
+    display: flex; /* Kunci untuk membuat layout berdampingan */
+    flex: 1; /* Membuat container ini mengisi sisa ruang */
+    padding: 2rem;
+    gap: 2rem; /* Jarak antara area foto dan panel kontrol */
+}
+
+.image-workspace {
+    flex: 3; /* Membuat area foto lebih besar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.control-panel {
+    flex: 1; /* Membuat panel kontrol lebih kecil */
+    background-color: #FFFFFF;
+    padding: 1.5rem;
+    border-radius: 12px; /* Sudut membulat untuk kesan soft */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+footer {
+    background-color: #F5C8DD;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* --- Styling Komponen --- */
+/* Mendandani setiap elemen kecil */
+
+h1, h2 {
+    font-weight: 700; /* Membuat judul lebih tebal */
+    margin-bottom: 1rem;
+}
+
+h2 {
+    color: #F5C8DD; /* Memberi warna pink pada sub-judul */
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #FDF6F8;
+}
+
+.image-placeholder {
+    width: 100%;
+    height: 100%;
+    border: 3px dashed #F5C8DD; /* Garis putus-putus yang estetik */
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #D3C5D9;
+}
+
+button {
+    font-family: Arial, sans-serif;
+}

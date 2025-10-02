@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamyLens</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>DreamyLens</h1>
+    </header>
+
+    <div class="main-container">
+        <main class="image-workspace">
+            <div class="image-placeholder">
+                <p>Upload fotomu di sini</p>
+            </div>
+        </main>
+
+        <aside class="control-panel">
+            <section class="filter-section">
+                <h2>Filters</h2>
+                <ul>
+                    <li><button>Cotton Candy</button></li>
+                    <li><button>Vintage Film</button></li>
+                    <li><button>Dreamy Glow</button></li>
+                </ul>
+            </section>
+
+            <section class="adjust-section">
+                <h2>Adjust</h2>
+                <label for="brightness">Brightness</label>
+                <input type="range" id="brightness" name="brightness" min="0" max="200" value="100">
+                
+                <label for="contrast">Contrast</label>
+                <input type="range" id="contrast" name="contrast" min="0" max="200" value="100">
+            </section>
+        </aside>
+    </div>
+
+    <footer>
+        <button id="upload-btn">Upload Baru</button>
+        <button id="save-btn">Simpan Foto</button>
+    
+    </footer>
+
+    <script src="script.js"></script> </body>
+</html>
+
+</body>
+</html>
